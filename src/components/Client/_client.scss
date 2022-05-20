@@ -1,58 +1,60 @@
 .client-logo-wrap {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    column-gap: 50px;
-    align-items: center;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 50px;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  &:nth-of-type(3) {
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 73px;
 
     @media (max-width: 600px) {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 40px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
     }
-
-    &:nth-of-type(3) {
-        grid-template-columns: repeat(4, 1fr);
-        margin-top: 73px;
-
-        @media (max-width: 600px) {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-    }
-    }
+  }
 }
 
 .client-section {
-    padding: 128px 233px 88px;
+  padding: 128px 233px 88px;
 
-    @media (max-width: 1480px) {
-        padding: 128px 165px 88px;
-    }
+  @media (max-width: 1480px) {
+    padding: 128px 165px 88px;
+  }
 
-    @media (max-width: 992px) {
-        padding: 128px 85px 88px;
-    }
+  @media (max-width: 992px) {
+    padding: 128px 85px 88px;
+  }
 
-    @media (max-width: 992px) {
-        padding: 128px 55px 88px;
-    }
+  @media (max-width: 992px) {
+    padding: 128px 55px 88px;
+  }
 
-    .shape-left {
-        top: -3%;
-    }
+  .shape-left {
+    top: -3%;
+  }
 }
 
 .logo {
-    @media (max-width: 1800px) {
-        width: 90%;
+  @media (max-width: 1800px) {
+    width: 90%;
+  }
+  img {
+    filter: brightness(0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    @media (max-width: 1440px) {
+      width: 100%;
     }
-    img {
-        filter: brightness(0.1);
-        transition: all .3s ease;
-        cursor: pointer;
-        width: 100%;
 
-        &:hover {
-            filter: brightness(1);
-        }
+    &:hover {
+      filter: brightness(1);
     }
+  }
 }
