@@ -1,0 +1,96 @@
+.footer {
+  padding: 0 130px;
+  overflow: hidden;
+
+  @media (max-width: 1200px) {
+    padding: 0 90px;
+  }
+
+  @media (max-width: 600px) {
+    padding: 0 55px;
+  }
+
+  &-link-wrap {
+    padding: 47px 84px;
+    background: $primary;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @media (max-width: 1080px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
+
+    @media (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+      padding: 47px 70px;
+    }
+  }
+
+  &-title {
+    font-size: 16px;
+    line-height: 35px;
+    font-weight: 700;
+  }
+
+  &-links {
+    width: fit-content;
+  }
+}
+
+.copyright-wrap {
+  padding: 22px 0;
+
+  p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+
+    @media (max-width: 600px) {
+        font-size: 12px;
+        line-height: 14px;
+    }
+  }
+}
+
+.social-wrap {
+  width: fit-content;
+  img {
+    position: absolute;
+    left: -30px;
+  }
+
+  &.w-50 {
+    @media (max-width: 1600px) {
+      width: 85% !important;
+    }
+
+    @media (max-width: 768px) {
+      width: 100% !important;
+    }
+  }
+
+  &:last-child {
+    @media (max-width: 600px) {
+      width: 50%;
+    }
+  }
+
+  a {
+    font-size: 14px;
+    line-height: 30px;
+    color: $dark;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $secondary;
+    }
+  }
+}
+
+.mail-link {
+  @media (max-width: 600px) {
+    word-break: break-all;
+  }
+}

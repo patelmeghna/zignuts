@@ -1,0 +1,88 @@
+#team {
+    position: relative;
+    padding: 165px 245px 119px;
+
+    @media (max-width: 1440px) {
+        padding: 165px 175px 119px;
+    }
+
+    @media (max-width: 880px) {
+        padding: 165px 90px 119px;
+    }
+
+    .shape-left {
+        top: -10%;
+    }
+}
+
+.team-img {
+    width: 280px;
+    height: 220px;
+    margin-bottom: 53px;
+    margin-top: 30px;
+
+    @media (max-width: 1366px) {
+        width: 230px;
+        height: fit-content;
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: 1200px) {
+        width: 200px;
+    }
+
+    @media (max-width: 992px) {
+        width: 180px;
+    }
+
+    @media (max-width: 768px) {
+        width: 250px;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.name {
+    font-size: 24px;
+    line-height: 28px;
+    color: $dark;
+
+    @media (max-width: 1366px) {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    @media (max-width: 992px) {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $dark;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform .5s;
+    }
+
+    &:hover {
+        color: $dark;
+
+        &::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+    }
+}

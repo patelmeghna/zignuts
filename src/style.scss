@@ -1,0 +1,23 @@
+// Custom Variable
+@import './variable';
+// Bootstrap Variable
+@import "~bootstrap/scss/bootstrap";
+
+// Global CSS
+@import './global';
+// Header CSS
+@import './Layout/Header/header';
+// Home CSS
+@import './components/Banner/Banner';
+@import './components/About/about';
+@import './components/Services/services';
+@import './components/Team/team';
+@import './components/Project/project';
+@import './components/Client/client';
+// Footer CSS
+@import './Layout/Footer/footer';
+
+// ========== Reusable Components ==========
+// Icon Box
+@import './components/IconBox/icon-box';
+@import './components/Title/title';
